@@ -40,7 +40,7 @@ input[type="password"][value$="a"] {
 Using a simple [script](https://github.com/maxchehab/CSS-Keylogging/blob/master/build.go) one can create a [css file](https://github.com/maxchehab/CSS-Keylogging/blob/master/css-keylogger-extension/keylogger.css) that will send a custom request for every ASCII character.
 
 
-备注：
+### 备注：
 
 css 选择器加载外部资源，只能触发一次，例如：输入字母 ‘a’, 触发如下 css 代码
 
@@ -63,10 +63,10 @@ app.get("/:key", (req, res) => {
 着服务器端获取不到该次输入，最终的结果是只能捕获没有重复内容的密码。
 
 例如：
-|输入|实际捕获|
-|---|---|
-|12345|12345|
-|1014333|10143|
-|123454321|12345|
+输入|实际捕获
+---|---
+12345|12345
+1014333|10143
+123454321|12345
 
 
